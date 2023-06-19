@@ -180,7 +180,7 @@ export function* startWallet(action) {
   } else {
     connection = new Connection({
       network: network.name,
-      servers: [config.getServerURL()],
+      servers: [config.getServerUrl()],
     });
 
     const beforeReloadCallback = () => {
